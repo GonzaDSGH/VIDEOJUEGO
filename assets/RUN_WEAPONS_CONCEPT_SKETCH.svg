@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <title>RÛN — Concept Sketch — Armas</title>
+  <defs>
+    <radialGradient id="paperGrad2" cx="45%" cy="35%" r="80%">
+      <stop offset="0%" stop-color="#f7efdd"/>
+      <stop offset="100%" stop-color="#e2d3ae"/>
+    </radialGradient>
+    <linearGradient id="woodGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a8794a"/>
+      <stop offset="100%" stop-color="#6b4226"/>
+    </linearGradient>
+    <linearGradient id="stoneGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7a7a7c"/>
+      <stop offset="100%" stop-color="#3a3a3c"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="620" fill="url(#paperGrad2)"/>
+  <line x1="500" y1="30" x2="500" y2="590" stroke="#4a3220" stroke-width="1" opacity="0.25" stroke-dasharray="4 6"/>
+
+  <!-- ============ ATLATL DE IMPULSO ============ -->
+  <g>
+    <!-- shaft -->
+    <path d="M120,520 L860,120 L868,132 L128,536 Z" fill="url(#woodGrad)" stroke="#2a1c12" stroke-width="3"/>
+    <!-- grip wrap -->
+    <g stroke="#3a2414" stroke-width="5" opacity="0.85">
+      <line x1="150" y1="500" x2="168" y2="488"/>
+      <line x1="164" y1="492" x2="182" y2="480"/>
+      <line x1="178" y1="484" x2="196" y2="472"/>
+      <line x1="192" y1="476" x2="210" y2="464"/>
+    </g>
+    <!-- contained impulse core (mid-shaft, wrapped, not glowing) -->
+    <ellipse cx="480" cy="332" rx="26" ry="15" fill="#3a3a3c" stroke="#1a1a1a" stroke-width="2" transform="rotate(-31 480 332)"/>
+    <g stroke="#241708" stroke-width="3" opacity="0.8">
+      <line x1="458" y1="352" x2="470" y2="316" transform="rotate(0 0 0)"/>
+      <line x1="470" y1="358" x2="482" y2="322"/>
+      <line x1="484" y1="362" x2="496" y2="326"/>
+      <line x1="498" y1="366" x2="510" y2="330"/>
+    </g>
+    <circle cx="480" cy="332" r="2.6" fill="#cfe8ff" opacity="0.7"/>
+    <!-- bone hook/spur at back end -->
+    <path d="M118,522 C104,518 92,526 90,540 C88,552 98,558 108,552 C112,544 116,532 118,522 Z" fill="#e9dfc4" stroke="#2a1c12" stroke-width="2.5"/>
+    <!-- dart nock groove line -->
+    <path d="M130,510 L108,532" stroke="#1c130c" stroke-width="2" opacity="0.6"/>
+    <!-- forward tip -->
+    <path d="M858,118 L878,108 L874,124 L862,130 Z" fill="#e9dfc4" stroke="#2a1c12" stroke-width="2"/>
+    <text x="140" y="580" font-family="Georgia, serif" font-style="italic" font-size="22" fill="#4a3220">Atlatl de Impulso</text>
+    <text x="140" y="602" font-family="Georgia, serif" font-size="13" fill="#4a3220" opacity="0.7">madera + hueso — núcleo contenido envuelto en tendón, amplifica el impulso mecánico</text>
+  </g>
+
+  <!-- ============ HACHA DE FRACTURA ============ -->
+  <g>
+    <!-- haft -->
+    <path d="M700,560 L780,270 L790,272 L712,562 Z" fill="url(#woodGrad)" stroke="#2a1c12" stroke-width="3"/>
+    <!-- sinew binding at head -->
+    <g stroke="#5c4a2c" stroke-width="4" opacity="0.9">
+      <line x1="758" y1="300" x2="800" y2="296"/>
+      <line x1="754" y1="314" x2="798" y2="310"/>
+      <line x1="750" y1="328" x2="794" y2="324"/>
+    </g>
+    <!-- stone axehead (concoidal fracture) -->
+    <path d="M748,240 C790,222 850,230 872,262 C880,278 866,296 840,300 C806,306 766,296 744,272 C736,260 738,248 748,240 Z" fill="url(#stoneGrad)" stroke="#141414" stroke-width="3"/>
+    <!-- fracture texture lines -->
+    <g stroke="#1c1c1e" stroke-width="1.4" opacity="0.6" fill="none">
+      <path d="M760,250 L782,268 L768,282"/>
+      <path d="M790,238 L806,258 L796,276"/>
+      <path d="M820,242 L838,262 L826,282"/>
+      <path d="M850,252 L862,270"/>
+    </g>
+    <!-- hairline crack revealing contained core -->
+    <path d="M796,258 C800,264 800,272 796,278" stroke="#0a0a0a" stroke-width="1.6" fill="none"/>
+    <circle cx="798" cy="268" r="3.2" fill="#232323"/>
+    <circle cx="798" cy="268" r="1.3" fill="#cfe8ff" opacity="0.65"/>
+    <!-- wrist strap -->
+    <path d="M706,540 C696,548 696,562 708,568 C718,572 726,564 722,554" fill="none" stroke="#3a2414" stroke-width="6" stroke-linecap="round"/>
+    <text x="640" y="590" font-family="Georgia, serif" font-style="italic" font-size="22" fill="#4a3220">Hacha de Fractura</text>
+    <text x="620" y="608" font-family="Georgia, serif" font-size="13" fill="#4a3220" opacity="0.7">piedra tallada + madera/hueso — microvibración de impacto, arma y herramienta</text>
+  </g>
+
+  <text x="40" y="40" font-family="Georgia, serif" font-style="italic" font-size="18" fill="#4a3220" opacity="0.7">RÛN — lámina de armas — material de proceso</text>
+</svg>

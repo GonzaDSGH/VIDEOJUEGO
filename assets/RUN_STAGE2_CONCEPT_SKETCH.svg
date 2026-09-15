@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1300" width="900" height="1300">
+  <title>RÛN — Concept Sketch — Vista Frontal</title>
+
+  <defs>
+    <radialGradient id="paperGrad" cx="45%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#f7efdd"/>
+      <stop offset="70%" stop-color="#efe3c8"/>
+      <stop offset="100%" stop-color="#e2d3ae"/>
+    </radialGradient>
+    <linearGradient id="skinGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d9a876"/>
+      <stop offset="55%" stop-color="#cf9a6a"/>
+      <stop offset="100%" stop-color="#b57f52"/>
+    </linearGradient>
+    <linearGradient id="prostheticGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8f8f8c"/>
+      <stop offset="55%" stop-color="#6f6f6c"/>
+      <stop offset="100%" stop-color="#54524e"/>
+    </linearGradient>
+    <linearGradient id="leatherGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a5a34"/>
+      <stop offset="100%" stop-color="#5c3a22"/>
+    </linearGradient>
+
+    <clipPath id="clipTorso">
+      <path d="M420,236 C395,242 355,255 338,278 C320,320 340,400 352,470 C356,510 344,540 340,566 C400,596 500,596 560,566 C566,540 556,510 562,468 C572,400 592,320 566,266 C548,244 505,236 480,236 C468,246 456,250 450,250 C444,250 432,246 420,236 Z"/>
+    </clipPath>
+    <clipPath id="clipLegL">
+      <path d="M340,566 C330,650 336,760 350,860 C356,920 356,980 366,1040 C372,1090 378,1140 388,1178 L420,1178 C422,1140 420,1090 422,1040 C424,980 420,920 424,860 C430,760 424,650 430,600 C400,610 360,600 340,566 Z"/>
+    </clipPath>
+    <clipPath id="clipLegR">
+      <path d="M560,566 C570,650 564,760 550,860 C544,920 544,980 534,1040 C528,1090 522,1140 512,1178 L480,1178 C478,1140 480,1090 478,1040 C476,980 480,920 476,860 C470,760 476,650 470,600 C500,610 540,600 560,566 Z"/>
+    </clipPath>
+    <clipPath id="clipArmOrg">
+      <path d="M338,278 C312,300 296,340 292,390 C288,440 288,460 292,470 C296,500 300,540 300,570 C300,595 304,615 300,650 C298,662 306,672 318,672 C330,672 336,660 334,646 C338,610 336,580 340,560 C346,520 344,480 350,460 C356,430 358,390 356,340 C354,315 348,296 338,278 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- paper -->
+  <rect x="0" y="0" width="900" height="1300" fill="url(#paperGrad)"/>
+  <ellipse cx="450" cy="1236" rx="180" ry="20" fill="#3a2a18" opacity="0.18"/>
+
+  <!-- ================= HAIR — back mass ================= -->
+  <path d="M406,138 C372,150 350,196 350,246 C350,300 364,344 380,372 C392,392 404,400 416,394 C408,344 404,282 408,232 C410,190 414,160 406,138 Z" fill="#241a12"/>
+  <path d="M496,136 C528,150 548,192 550,240 C552,286 542,322 528,348 C536,300 536,250 530,206 C526,176 516,150 496,136 Z" fill="#241a12"/>
+  <path d="M500,150 C520,164 528,186 524,206 C512,200 500,190 494,176 C490,166 492,156 500,150 Z" fill="#2c2014"/>
+  <!-- tied knot -->
+  <ellipse cx="508" cy="196" rx="14" ry="10" fill="#2c2014" stroke="#1c130c" stroke-width="2"/>
+  <path d="M498,192 C504,186 514,186 520,192" stroke="#c9a877" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M500,204 C512,222 520,250 512,270" stroke="#1c130c" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.8"/>
+  <!-- irregular strand lines -->
+  <g stroke="#1c130c" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.75">
+    <path d="M362,196 C356,230 360,268 372,300"/>
+    <path d="M374,158 C364,190 362,224 368,256"/>
+    <path d="M392,150 C386,180 388,210 396,236"/>
+    <path d="M532,168 C540,196 538,224 528,250"/>
+    <path d="M544,206 C548,236 542,264 530,286"/>
+    <path d="M518,220 C528,244 526,268 514,288"/>
+  </g>
+
+  <!-- ================= LEGS (skin base) ================= -->
+  <path d="M340,566 C330,650 336,760 350,860 C356,920 356,980 366,1040 C372,1090 378,1140 388,1178 L420,1178 C422,1140 420,1090 422,1040 C424,980 420,920 424,860 C430,760 424,650 430,600 C400,610 360,600 340,566 Z" fill="url(#skinGrad)" stroke="#2a1c12" stroke-width="3"/>
+  <path d="M560,566 C570,650 564,760 550,860 C544,920 544,980 534,1040 C528,1090 522,1140 512,1178 L480,1178 C478,1140 480,1090 478,1040 C476,980 480,920 476,860 C470,760 476,650 470,600 C500,610 540,600 560,566 Z" fill="url(#skinGrad)" stroke="#2a1c12" stroke-width="3"/>
+  <!-- knee/shin hatch -->
+  <g clip-path="url(#clipLegR)" stroke="#3a2818" stroke-width="2" opacity="0.35">
+    <path d="M540,700 C520,706 500,712 480,716" fill="none"/>
+    <path d="M536,840 C516,846 498,850 480,854" fill="none"/>
+    <path d="M528,980 C510,984 494,988 480,992" fill="none"/>
+  </g>
+
+  <!-- feet / boots -->
+  <path d="M386,1178 C378,1196 386,1214 410,1216 C430,1217 440,1204 428,1182 Z" fill="#7a4f2c" stroke="#2a1c12" stroke-width="3"/>
+  <path d="M482,1178 C474,1196 482,1214 500,1216 C518,1217 528,1204 514,1182 Z" fill="#7a4f2c" stroke="#2a1c12" stroke-width="3"/>
+  <path d="M384,1180 C400,1174 416,1174 430,1180" stroke="#c9b28a" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M480,1180 C494,1174 510,1174 516,1180" stroke="#c9b28a" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- leg wrap straps -->
+  <g stroke="#3a2414" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.9">
+    <path d="M362,760 C378,752 400,752 418,758"/>
+    <path d="M366,900 C384,892 404,892 420,898"/>
+    <path d="M478,900 C496,892 516,892 534,898"/>
+    <path d="M472,760 C490,752 512,752 528,758"/>
+  </g>
+
+  <!-- ================= ORGANIC ARM (image-left / character right) ================= -->
+  <path d="M338,278 C312,300 296,340 292,390 C288,440 288,460 292,470 C296,500 300,540 300,570 C300,595 304,615 300,650 C298,662 306,672 318,672 C330,672 336,660 334,646 C338,610 336,580 340,560 C346,520 344,480 350,460 C356,430 358,390 356,340 C354,315 348,296 338,278 Z" fill="url(#skinGrad)" stroke="#2a1c12" stroke-width="3"/>
+  <g clip-path="url(#clipArmOrg)" stroke="#3a2818" stroke-width="2" opacity="0.35">
+    <path d="M296,360 C312,364 326,364 340,360" fill="none"/>
+    <path d="M296,470 C312,476 328,476 344,470" fill="none"/>
+    <path d="M300,560 C312,566 322,566 332,560" fill="none"/>
+  </g>
+  <!-- forearm leather wrap -->
+  <path d="M294,560 C306,552 322,552 334,558 L336,590 C322,596 306,596 296,590 Z" fill="#6b4226" stroke="#2a1c12" stroke-width="2.5"/>
+  <!-- relaxed hand -->
+  <path d="M300,646 C298,664 306,676 318,676 C328,676 334,668 332,654 C324,660 310,660 300,646 Z" fill="url(#skinGrad)" stroke="#2a1c12" stroke-width="2.5"/>
+
+  <!-- ================= PROSTHETIC ARM (image-right / character left) ================= -->
+  <path d="M566,266 C592,290 606,330 608,380 C610,430 608,455 604,468 C600,500 596,540 596,568 C596,594 600,612 598,644 C596,658 588,668 578,668 C568,668 562,656 564,642 C566,608 562,580 558,560 C552,522 552,482 548,460 C544,428 542,388 546,338 C548,312 554,290 566,266 Z" fill="url(#prostheticGrad)" stroke="#221a12" stroke-width="3"/>
+  <!-- joint seams (integrated, not robotic) -->
+  <g stroke="#2a231c" stroke-width="2" fill="none" opacity="0.8">
+    <path d="M556,352 C572,356 588,354 602,348"/>
+    <path d="M552,470 C568,476 584,474 598,468"/>
+    <path d="M562,560 C574,566 586,564 594,558"/>
+  </g>
+  <!-- binding straps (sinew/leather repair wrap, not circuitry) -->
+  <g stroke="#4a3016" stroke-width="6" fill="none" stroke-linecap="round">
+    <path d="M550,344 C566,338 584,338 600,344"/>
+    <path d="M548,466 C564,460 582,460 596,466"/>
+  </g>
+  <!-- subtle tech accent only at shoulder joint -->
+  <circle cx="586" cy="300" r="4" fill="#cfe8ff" opacity="0.55"/>
+  <circle cx="586" cy="300" r="8" fill="none" stroke="#cfe8ff" stroke-width="1.2" opacity="0.35"/>
+  <!-- prosthetic hand gripping axe haft -->
+  <path d="M598,640 C596,658 588,670 578,670 C570,670 564,662 566,650 C574,656 588,654 598,640 Z" fill="url(#prostheticGrad)" stroke="#221a12" stroke-width="2.5"/>
+
+  <!-- ================= FRACTURE AXE at hip (behind torso, handle visible) ================= -->
+  <path d="M586,558 L600,612 L590,618 L578,564 Z" fill="#5c3a22" stroke="#2a1c12" stroke-width="2"/>
+  <path d="M578,548 C592,540 610,542 616,556 C608,566 592,566 580,560 Z" fill="#5a5a5c" stroke="#1a1a1a" stroke-width="2"/>
+  <path d="M596,552 L610,548 L608,558 Z" fill="#17181a"/>
+
+  <!-- ================= ATLATL diagonal across back ================= -->
+  <path d="M598,612 L612,604 L566,112 L552,120 Z" fill="#9c7248" stroke="#2a1c12" stroke-width="2.5"/>
+  <path d="M554,122 C548,110 552,96 566,92 C578,96 580,110 572,120 Z" fill="#e9dfc4" stroke="#2a1c12" stroke-width="2"/>
+  <g stroke="#3a2414" stroke-width="3" opacity="0.8">
+    <path d="M596,580 L610,576"/>
+    <path d="M600,596 L614,592"/>
+  </g>
+
+  <!-- ================= TORSO / CLOTHING ================= -->
+  <path d="M420,236 C395,242 355,255 338,278 C320,320 340,400 352,470 C356,510 344,540 340,566 C400,596 500,596 560,566 C566,540 556,510 562,468 C572,400 592,320 566,266 C548,244 505,236 480,236 C468,246 456,250 450,250 C444,250 432,246 420,236 Z" fill="url(#skinGrad)" stroke="#2a1c12" stroke-width="3"/>
+
+  <!-- draped hide poncho -->
+  <path d="M372,272 C342,302 332,362 338,420 C332,480 342,538 352,596 C382,656 420,688 450,690 C480,688 518,656 548,596 C558,538 568,480 562,420 C568,362 558,302 528,272 C500,292 472,302 450,302 C428,302 400,292 372,272 Z" fill="url(#leatherGrad)" stroke="#241708" stroke-width="3"/>
+  <!-- asymmetric under-layer peeking -->
+  <path d="M400,560 C420,610 440,650 452,688 C438,652 420,610 404,566 Z" fill="#3f2a17" opacity="0.6"/>
+
+  <!-- fur trim at neckline/shoulders -->
+  <path d="M374,274 C398,296 424,306 450,306 C476,306 502,296 526,274 C520,282 512,290 502,296 C508,286 500,282 492,288 C486,280 478,286 472,292 C466,282 458,288 452,294 C446,286 438,290 432,296 C426,288 418,284 412,292 C404,284 396,280 390,286 C382,282 378,278 374,274 Z" fill="#cdbd97" stroke="#5c4a2c" stroke-width="1.5"/>
+
+  <!-- chest straps -->
+  <path d="M382,288 L560,586 L550,594 L372,296 Z" fill="#4a3016" opacity="0.9"/>
+  <path d="M520,286 L400,560 L392,554 L512,280 Z" fill="#3a2410" opacity="0.85"/>
+
+  <!-- bone ornament necklace -->
+  <path d="M404,318 C424,336 476,336 496,318" fill="none" stroke="#7a5a34" stroke-width="3"/>
+  <g fill="#e9dfc4" stroke="#a89666" stroke-width="1">
+    <ellipse cx="414" cy="326" rx="6" ry="9"/>
+    <ellipse cx="432" cy="336" rx="6" ry="9"/>
+    <ellipse cx="450" cy="340" rx="7" ry="10"/>
+    <ellipse cx="468" cy="336" rx="6" ry="9"/>
+    <ellipse cx="486" cy="326" rx="6" ry="9"/>
+  </g>
+
+  <!-- ochre painted accent marks on poncho -->
+  <g stroke="#a8551f" stroke-width="4" stroke-linecap="round" opacity="0.85">
+    <path d="M410,420 L420,440"/>
+    <path d="M424,418 L432,442"/>
+    <path d="M480,430 L492,448"/>
+  </g>
+
+  <!-- torso shading hatch -->
+  <g clip-path="url(#clipTorso)" stroke="#241708" stroke-width="2" opacity="0.3">
+    <path d="M540,320 C520,328 500,332 480,332" fill="none"/>
+    <path d="M548,400 C526,408 504,412 484,412" fill="none"/>
+    <path d="M552,470 C530,478 508,482 488,482" fill="none"/>
+  </g>
+
+  <!-- ================= HAIR — front strands over shoulders ================= -->
+  <path d="M400,220 C378,250 366,286 368,320 C378,306 390,290 398,272 C406,290 404,310 396,328 C410,314 420,290 418,264 C418,246 410,230 400,220 Z" fill="#241a12"/>
+  <path d="M508,224 C528,252 538,286 534,318 C524,304 514,288 508,270 C500,290 502,310 512,326 C496,312 488,288 490,262 C492,246 500,232 508,224 Z" fill="#241a12"/>
+
+  <!-- ================= HEAD ================= -->
+  <path d="M405,190 C400,150 418,114 450,112 C483,114 501,150 496,192 C498,205 495,222 486,236 C475,250 459,258 444,259 C433,258 421,250 412,236 C405,222 402,205 405,190 Z" fill="url(#skinGrad)" stroke="#2a1c12" stroke-width="3"/>
+
+  <!-- ears -->
+  <path d="M403,188 C396,190 393,200 397,210 C401,216 407,214 407,206 Z" fill="url(#skinGrad)" stroke="#2a1c12" stroke-width="2"/>
+  <path d="M497,188 C504,190 507,200 503,210 C499,216 493,214 493,206 Z" fill="url(#skinGrad)" stroke="#2a1c12" stroke-width="2"/>
+
+  <!-- eyebrows -->
+  <path d="M412,178 C422,172 434,172 442,176" stroke="#241a12" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M458,176 C466,172 478,172 488,178" stroke="#241a12" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M470,180 L478,174" stroke="#1c1108" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- organic eye (image-left / character right) -->
+  <path d="M414,196 C420,190 434,190 440,196 C434,202 420,202 414,196 Z" fill="#f3ead9" stroke="#2a1c12" stroke-width="2"/>
+  <circle cx="427" cy="196" r="4.2" fill="#241a12"/>
+
+  <!-- implant eye (image-right / character left) -->
+  <path d="M460,196 C466,190 480,190 486,196 C480,202 466,202 460,196 Z" fill="#e7dcc4" stroke="#2a1c12" stroke-width="2"/>
+  <circle cx="473" cy="196" r="6.5" fill="none" stroke="#8a5a2c" stroke-width="1.4"/>
+  <circle cx="473" cy="196" r="3.6" fill="none" stroke="#8a5a2c" stroke-width="1.1"/>
+  <circle cx="473" cy="196" r="1.6" fill="#cfe8ff" opacity="0.8"/>
+  <path d="M464,188 C468,184 478,184 482,188" stroke="#2a1c12" stroke-width="1.3" fill="none" opacity="0.7"/>
+  <path d="M462,204 L456,210 M484,204 L490,210" stroke="#2a1c12" stroke-width="1.3" opacity="0.6"/>
+
+  <!-- nose -->
+  <path d="M448,198 C446,210 444,220 448,228 C452,230 456,229 458,226" stroke="#2a1c12" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- mouth -->
+  <path d="M430,240 C438,244 460,244 468,240" stroke="#2a1c12" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M434,246 C442,248 456,248 464,246" stroke="#8a5a3c" stroke-width="1.2" fill="none" opacity="0.6"/>
+
+  <!-- jaw shading -->
+  <path d="M410,220 C406,228 407,236 412,242" stroke="#8a5a3c" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- ================= signature ================= -->
+  <text x="40" y="1268" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="20" fill="#4a3220" opacity="0.75">RÛN — boceto de concepto — vista frontal — v1</text>
+  <text x="40" y="1290" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#4a3220" opacity="0.55">material de proceso — no arte final</text>
+</svg>

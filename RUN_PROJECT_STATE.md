@@ -95,7 +95,9 @@ Corrección de Claude al cerrar Stage 1:
 - La base de piernas de Pose A estaba algo ancha. En la vista frontal, estrechar un poco la postura para reforzar agilidad.
 
 ## Etapa 2 — VISTA FRONTAL
-ESTADO: MATERIAL PRODUCIDO, PENDIENTE DE EVALUACIÓN DE CLAUDE.
+ESTADO: CERRADA POR CLAUDE — boceto de concepto real producido directamente por Claude.
+
+Nota de continuidad: el block-in `assets/STAGE2_FRONT_VIEW.jpg` (JPEG progresivo, 240×252px) sigue bloqueado técnicamente para evaluación visual en el entorno de Claude Code (sin soporte de JPEG progresivo ni herramientas de conversión con permisos habilitados). En lugar de seguir bloqueado en esa evaluación, Claude produjo un boceto de concepto propio y avanzó la etapa, tal como fue indicado explícitamente por el usuario. Ese JPG queda como referencia histórica, no como bloqueante.
 
 Orientación obligatoria en vista frontal:
 - RÛN mira al espectador.
@@ -121,15 +123,34 @@ No evaluar todavía:
 - detalles de armas;
 - símbolos finos del implante.
 
-### Artefacto de Stage 2
-- Archivo en repo: `assets/STAGE2_FRONT_VIEW.jpg`
-- URL raw: `https://raw.githubusercontent.com/GonzaDSGH/VIDEOJUEGO/main/assets/STAGE2_FRONT_VIEW.jpg`
-- Este es el artefacto que Claude debe abrir y evaluar visualmente.
+### Artefactos de Stage 2
+- Boceto de concepto (autoría Claude, deliverable vigente): `assets/RUN_STAGE2_CONCEPT_SKETCH.svg`
+- Lámina de armas (autoría Claude): `assets/RUN_WEAPONS_CONCEPT_SKETCH.svg`
+- Diagrama estructural previo (solo apoyo interno, no es boceto/arte): `assets/RUN_CLAUDE_VISUAL_DRAFT.svg` (rama `claude/issue-1-20260915-0735`, no mergeada a `main`)
+- Block-in legado sin evaluar (bloqueado técnicamente, ver nota arriba): `assets/STAGE2_FRONT_VIEW.jpg`
+
+Proporciones bloqueadas del boceto de concepto (referencia para consistencia en Etapa 3):
+- Altura total ≈ 8.3 alturas de cabeza (figura esbelta/ágil).
+- Ancho de hombros ≈ 2.4 alturas de cabeza; hombro del lado protésico (izquierdo del personaje) ligeramente más alto y pesado.
+- Cintura/cadera estrechadas respecto al block-in original (corrección de Etapa 1 aplicada).
+- Brazo protésico: mismo largo que el orgánico, silueta ligeramente más delgada.
+- Postura: peso centrado, piernas en estance angosto para lectura ágil.
+
+## Etapa 3 — VISTA LATERAL Y POSTERIOR (blueprint bloqueado)
+ESTADO: BLUEPRINT DEFINIDO POR CLAUDE, BOCETOS PENDIENTES DE PRODUCCIÓN.
+
+Reglas de consistencia obligatorias (derivadas del boceto frontal):
+- Mantener las proporciones bloqueadas arriba (misma altura total, mismo largo de brazos/piernas).
+- Vista lateral: mostrar el atlatl en toda su diagonal real a lo largo de la espalda (~45°, saliendo desde la cadera derecha del personaje hasta sobre el hombro izquierdo), y el hacha de fractura visible en la cadera/zona lumbar, enfundada.
+- Vista lateral debe elegirse desde el lado del ojo orgánico (perfil derecho del personaje) para lectura clara de rasgos, dejando el lado protésico sugerido en el contorno de espalda.
+- Vista posterior: el cabello (medio-largo, irregular, parcialmente atado) cae sobre la espalda y debe leerse compatible con el mechón atado ya definido en el boceto frontal.
+- Vista posterior debe mostrar con claridad el anclaje del atlatl y el hacha en la espalda/cadera sin bloquear la silueta general.
+- No introducir nuevos materiales o colores fuera de la paleta y jerarquía ya bloqueadas.
 
 ## Flujo de trabajo compartido
-- Claude: lee `RUN_PROJECT_STATE.md`, abre los artefactos raw indicados y evalúa cada etapa.
-- ChatGPT: produce los bocetos/láminas/artefactos solicitados, los sube al repo y actualiza este estado.
+- Claude: lee `RUN_PROJECT_STATE.md`, produce bocetos de concepto propios cuando se le pide un artefacto visual real, evalúa artefactos cuando el formato lo permite, y define blueprints de consistencia entre vistas.
+- ChatGPT: coordina el estado del repo, releva tareas y produce material adicional cuando corresponda.
 - Usuario: no dibuja ni produce manualmente; usa ambos asistentes para desarrollar el proceso.
 
 ## Próxima acción
-Claude debe abrir el artefacto `assets/STAGE2_FRONT_VIEW.jpg`, evaluar Stage 2 — Front View block-in y, si la estructura es correcta, cerrar Stage 2 y pasar al blueprint de SIDE VIEW.
+Producir los bocetos de concepto de VISTA LATERAL y VISTA POSTERIOR siguiendo el blueprint de Etapa 3, manteniendo la consistencia de proporciones, materiales y ubicación de armas ya bloqueada.
