@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <radialGradient id="paper2" cx="50%" cy="35%" r="80%">
+      <stop offset="0%" stop-color="#f3ead4"/>
+      <stop offset="100%" stop-color="#e3d5b3"/>
+    </radialGradient>
+    <pattern id="hatchW" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(52)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#241b12" stroke-width="0.9" opacity="0.5"/>
+    </pattern>
+    <pattern id="crossHatchW" width="7" height="7" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#241b12" stroke-width="0.8" opacity="0.45" transform="rotate(45 3.5 3.5)"/>
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#241b12" stroke-width="0.8" opacity="0.45" transform="rotate(-45 3.5 3.5)"/>
+    </pattern>
+    <filter id="glowW" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1100" height="720" fill="url(#paper2)"/>
+  <text x="550" y="48" text-anchor="middle" font-size="26" fill="#2a2015" letter-spacing="2">RÛN — LÁMINA DE ARMAS</text>
+  <text x="550" y="72" text-anchor="middle" font-size="14" fill="#5a4a34">Boceto de concepto — autoría Claude — tecnología contenida, no expuesta</text>
+
+  <line x1="550" y1="100" x2="550" y2="660" stroke="#c9b98d" stroke-width="1.5"/>
+
+  <!-- ================= ATLATL DE IMPULSO ================= -->
+  <text x="270" y="120" text-anchor="middle" font-size="19" fill="#2a2015">ATLATL DE IMPULSO</text>
+
+  <g transform="translate(120,340) rotate(-14)">
+    <!-- main shaft -->
+    <path d="M0,0 C120,-6 260,-8 380,-4 C388,-3 388,7 380,8 C260,10 120,10 0,4 Z" fill="#6b4327"/>
+    <path d="M0,0 C120,-6 260,-8 380,-4 C388,-3 388,7 380,8 C260,10 120,10 0,4 Z" fill="url(#hatchW)" opacity="0.4"/>
+    <!-- hand grip wrap -->
+    <g stroke="#4a2f1c" stroke-width="5" opacity="0.85">
+      <line x1="12" y1="-4" x2="12" y2="10"/>
+      <line x1="24" y1="-5" x2="24" y2="11"/>
+      <line x1="36" y1="-5" x2="36" y2="11"/>
+      <line x1="48" y1="-5" x2="48" y2="11"/>
+    </g>
+    <!-- spur hook at throwing end -->
+    <path d="M380,-4 C400,-14 410,-30 404,-46 C398,-34 388,-22 376,-14 Z" fill="#e7dcc0" stroke="#4a2f1c" stroke-width="1.5"/>
+    <!-- contained tech core bulge, wrapped -->
+    <ellipse cx="330" cy="2" rx="26" ry="13" fill="#4a2f1c"/>
+    <ellipse cx="330" cy="2" rx="26" ry="13" fill="url(#crossHatchW)" opacity="0.5"/>
+    <path d="M312,2 L348,2" stroke="#cdeaf5" stroke-width="1.6" opacity="0.8" filter="url(#glowW)"/>
+    <circle cx="330" cy="2" r="3" fill="#cdeaf5" opacity="0.85" filter="url(#glowW)"/>
+    <!-- dart nock groove -->
+    <line x1="356" y1="-2" x2="378" y2="0" stroke="#241b12" stroke-width="1.5"/>
+  </g>
+
+  <!-- dart, shown separately -->
+  <g transform="translate(60,470) rotate(-2)">
+    <line x1="0" y1="0" x2="300" y2="0" stroke="#8a6a44" stroke-width="4"/>
+    <path d="M300,0 L282,-9 L282,9 Z" fill="#17171a"/>
+    <path d="M0,0 L18,-10 M0,0 L18,10" stroke="#e7dcc0" stroke-width="3"/>
+  </g>
+  <text x="270" y="510" text-anchor="middle" font-size="12" fill="#5a4a34">dardo de asta — punta de sílex tallado</text>
+
+  <g font-size="12.5" fill="#3a2f20">
+    <text x="30" y="560">Función: amplificador mecánico del lanzamiento (palanca + resorte de fibra tensada).</text>
+    <text x="30" y="580">No dispara energía ni proyectiles de luz — el núcleo solo potencia el impulso del brazo.</text>
+    <text x="30" y="600">Materiales: asta de madera dura, gancho de hueso, envoltura de tendón y cuero.</text>
+    <text x="30" y="620">Tecnología: núcleo contenido y envuelto en la mitad del asta; brillo blanco-azulado muy tenue,</text>
+    <text x="30" y="638">visible solo de cerca — se lee como una veta mineral, no como un panel o cableado.</text>
+  </g>
+
+  <!-- ================= HACHA DE FRACTURA ================= -->
+  <text x="830" y="120" text-anchor="middle" font-size="19" fill="#2a2015">HACHA DE FRACTURA</text>
+
+  <g transform="translate(760,260)">
+    <!-- haft -->
+    <path d="M20,40 C24,110 26,180 22,240 C21,250 31,250 32,240 C38,180 38,110 34,40 Z" fill="#6b4327"/>
+    <path d="M20,40 C24,110 26,180 22,240 C21,250 31,250 32,240 C38,180 38,110 34,40 Z" fill="url(#hatchW)" opacity="0.4"/>
+    <!-- binding wraps lashing head to haft -->
+    <g stroke="#4a2f1c" stroke-width="6" opacity="0.9">
+      <path d="M6,46 C18,52 36,52 48,46"/>
+      <path d="M8,58 C18,64 36,64 46,58"/>
+      <path d="M10,70 C18,75 34,75 44,70"/>
+    </g>
+    <!-- stone axe head, concoidal fracture silhouette -->
+    <path d="M27,44 C4,34 -32,26 -58,4 C-46,-6 -28,-10 -8,-6 C10,-2 24,10 30,26 Z" fill="#2b2b30"/>
+    <path d="M27,44 C4,34 -32,26 -58,4 C-46,-6 -28,-10 -8,-6 C10,-2 24,10 30,26 Z" fill="url(#crossHatchW)" opacity="0.55"/>
+    <!-- fracture facet lines -->
+    <g stroke="#0f0f11" stroke-width="1.3" opacity="0.75">
+      <line x1="-8" y1="-4" x2="4" y2="18"/>
+      <line x1="-22" y1="0" x2="-4" y2="20"/>
+      <line x1="-38" y1="4" x2="-16" y2="24"/>
+      <line x1="-50" y1="6" x2="-30" y2="20"/>
+    </g>
+    <!-- contained tech core seam along the blade spine -->
+    <path d="M-52,6 C-30,10 -4,18 22,32" stroke="#cdeaf5" stroke-width="1.4" opacity="0.8" filter="url(#glowW)" fill="none"/>
+    <circle cx="-40" cy="8" r="2.6" fill="#cdeaf5" opacity="0.85" filter="url(#glowW)"/>
+    <!-- bottom grip wrap -->
+    <g stroke="#4a2f1c" stroke-width="5" opacity="0.8">
+      <line x1="18" y1="210" x2="36" y2="210"/>
+      <line x1="18" y1="222" x2="36" y2="222"/>
+    </g>
+  </g>
+
+  <g font-size="12.5" fill="#3a2f20">
+    <text x="600" y="560">Función: herramienta y arma; el núcleo genera microvibración al impacto (fractura limpia,</text>
+    <text x="600" y="578">no explosiva). Amplifica un golpe de piedra real, no reemplaza el filo.</text>
+    <text x="600" y="600">Materiales: cabeza de piedra con fractura concoidea, astil de madera, atado de tendón/cuero.</text>
+    <text x="600" y="620">Tecnología: veta contenida a lo largo del filo interno; visible solo como una línea de brillo</text>
+    <text x="600" y="638">tenue en la fractura — nunca como circuito ni panel expuesto.</text>
+  </g>
+
+  <text x="550" y="690" text-anchor="middle" font-size="12" fill="#5a4a34">Jerarquía visual: foco terciario — ambas armas leen primero como herramientas prehistóricas reales.</text>
+</svg>

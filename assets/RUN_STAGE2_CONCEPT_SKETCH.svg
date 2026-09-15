@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1150" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <radialGradient id="paper" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#f3ead4"/>
+      <stop offset="100%" stop-color="#e3d5b3"/>
+    </radialGradient>
+    <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(52)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#241b12" stroke-width="0.9" opacity="0.55"/>
+    </pattern>
+    <pattern id="hatchDeep" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(52)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#241b12" stroke-width="1.1" opacity="0.7"/>
+    </pattern>
+    <pattern id="crossHatch" width="7" height="7" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#241b12" stroke-width="0.8" opacity="0.5" transform="rotate(45 3.5 3.5)"/>
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#241b12" stroke-width="0.8" opacity="0.5" transform="rotate(-45 3.5 3.5)"/>
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="1150" fill="url(#paper)"/>
+  <text x="450" y="52" text-anchor="middle" font-size="26" fill="#2a2015" letter-spacing="2">RÛN — ETAPA 2: VISTA FRONTAL</text>
+  <text x="450" y="78" text-anchor="middle" font-size="14" fill="#5a4a34">Boceto de concepto — autoría Claude — no final art</text>
+
+  <!-- ground -->
+  <ellipse cx="450" cy="918" rx="230" ry="18" fill="#00000012"/>
+
+  <!-- ===== HAIR BACK LAYER ===== -->
+  <path d="M420,120 C392,140 372,178 366,224 C362,256 366,288 378,314 C368,300 358,278 356,252 C352,208 366,158 396,126 Z" fill="#241a10"/>
+  <path d="M480,120 C512,142 530,182 534,226 C536,258 530,290 516,316 C528,300 538,276 540,250 C542,206 526,156 496,126 Z" fill="#241a10"/>
+
+  <!-- ===== LEGS ===== -->
+  <path d="M412,540 C402,592 394,650 389,696 C385,728 383,742 381,764 C377,804 375,842 375,868 C375,880 377,890 381,898 L402,898 C406,888 407,878 406,866 C405,828 406,790 410,752 C413,718 417,680 422,640 C426,604 428,574 426,546 Z" fill="#c9925f"/>
+  <path d="M412,540 C402,592 394,650 389,696 C385,728 383,742 381,764 C377,804 375,842 375,868 C375,880 377,890 381,898 L402,898 C406,888 407,878 406,866 C405,828 406,790 410,752 C413,718 417,680 422,640 C426,604 428,574 426,546 Z" fill="url(#hatch)" opacity="0.35"/>
+  <path d="M488,540 C498,592 506,650 511,696 C515,728 517,742 519,764 C523,804 525,842 525,868 C525,880 523,890 519,898 L498,898 C494,888 493,878 494,866 C495,828 494,790 490,752 C487,718 483,680 478,640 C474,604 472,574 474,546 Z" fill="#c9925f"/>
+  <path d="M488,540 C498,592 506,650 511,696 C515,728 517,742 519,764 C523,804 525,842 525,868 C525,880 523,890 519,898 L498,898 C494,888 493,878 494,866 C495,828 494,790 490,752 C487,718 483,680 478,640 C474,604 472,574 474,546 Z" fill="url(#hatch)" opacity="0.35"/>
+
+  <!-- leather wrap straps on legs -->
+  <g stroke="#4a2f1c" stroke-width="6" fill="none" opacity="0.85">
+    <path d="M382,600 C398,606 412,606 424,600"/>
+    <path d="M379,660 C398,668 414,668 428,658"/>
+    <path d="M376,730 C396,738 412,738 426,728"/>
+    <path d="M375,800 C394,806 408,806 420,798"/>
+    <path d="M518,600 C502,606 488,606 476,600"/>
+    <path d="M521,660 C502,668 486,668 472,658"/>
+    <path d="M524,730 C504,738 488,738 474,728"/>
+    <path d="M525,800 C506,806 492,806 480,798"/>
+  </g>
+
+  <!-- boots -->
+  <path d="M375,898 C370,908 368,916 371,924 C376,931 398,933 410,928 C417,924 415,912 408,904 L402,898 Z" fill="#5c3c22"/>
+  <path d="M525,898 C530,908 532,916 529,924 C524,931 502,933 490,928 C483,924 485,912 492,904 L498,898 Z" fill="#5c3c22"/>
+  <path d="M375,898 C370,908 368,916 371,924 C376,931 398,933 410,928 C417,924 415,912 408,904 L402,898 Z" fill="url(#hatchDeep)" opacity="0.5"/>
+  <path d="M525,898 C530,908 532,916 529,924 C524,931 502,933 490,928 C483,924 485,912 492,904 L498,898 Z" fill="url(#hatchDeep)" opacity="0.5"/>
+
+  <!-- ===== PELVIS WRAP + FRINGE ===== -->
+  <path d="M348,516 C380,536 420,546 450,546 C480,546 520,536 552,516 C556,540 552,560 540,576 L360,576 C348,560 344,540 348,516 Z" fill="#6b4327"/>
+  <g stroke="#4a2f1c" stroke-width="5" opacity="0.8">
+    <line x1="372" y1="576" x2="366" y2="612"/>
+    <line x1="396" y1="578" x2="392" y2="616"/>
+    <line x1="420" y1="579" x2="418" y2="618"/>
+    <line x1="450" y1="579" x2="450" y2="620"/>
+    <line x1="480" y1="579" x2="482" y2="618"/>
+    <line x1="504" y1="578" x2="508" y2="616"/>
+    <line x1="528" y1="576" x2="534" y2="612"/>
+  </g>
+  <path d="M348,516 C380,536 420,546 450,546 C480,546 520,536 552,516 C556,540 552,560 540,576 L360,576 C348,560 344,540 348,516 Z" fill="url(#hatch)" opacity="0.25"/>
+
+  <!-- fracture axe at right hip (dominant/organic hand side, viewer-left) -->
+  <g transform="translate(345,470) rotate(18)">
+    <rect x="-4" y="0" width="8" height="92" rx="3" fill="#5c3c22"/>
+    <path d="M-6,4 C-30,-6 -44,-24 -40,-42 C-24,-34 -8,-20 4,-6 Z" fill="#17171a"/>
+    <path d="M-6,4 C-30,-6 -44,-24 -40,-42 C-24,-34 -8,-20 4,-6 Z" fill="url(#crossHatch)" opacity="0.5"/>
+    <line x1="-6" y1="2" x2="6" y2="10" stroke="#b5651d" stroke-width="4"/>
+  </g>
+
+  <!-- ===== TORSO BASE ===== -->
+  <path d="M345,242 C398,224 502,224 562,232 C590,268 594,318 580,358 C574,398 568,428 558,458 C568,478 580,498 576,520 C562,534 522,544 492,546 L408,546 C378,544 338,534 324,520 C320,498 332,478 342,458 C332,428 326,398 320,358 C306,318 310,268 345,242 Z" fill="#c9925f"/>
+  <path d="M345,242 C398,224 502,224 562,232 C590,268 594,318 580,358 C574,398 568,428 558,458 C568,478 580,498 576,520 C562,534 522,544 492,546 L408,546 C378,544 338,534 324,520 C320,498 332,478 342,458 C332,428 326,398 320,358 C306,318 310,268 345,242 Z" fill="url(#hatch)" opacity="0.22"/>
+
+  <!-- side shadow under ribs -->
+  <path d="M322,360 C318,392 320,420 330,448 L348,448 C338,418 336,388 340,362 Z" fill="url(#hatchDeep)" opacity="0.6"/>
+  <path d="M578,360 C582,392 580,420 570,448 L552,448 C562,418 564,388 560,362 Z" fill="url(#hatchDeep)" opacity="0.6"/>
+
+  <!-- ===== ORGANIC ARM (viewer-left = character's right / dominant) ===== -->
+  <path d="M345,242 C316,264 294,300 284,340 C275,382 274,426 282,466 C287,492 294,514 300,534 C304,544 296,552 288,548 C280,528 272,504 267,478 C258,432 258,382 270,336 C280,296 302,258 330,232 Z" fill="#c9925f"/>
+  <path d="M345,242 C316,264 294,300 284,340 C275,382 274,426 282,466 C287,492 294,514 300,534 C304,544 296,552 288,548 C280,528 272,504 267,478 C258,432 258,382 270,336 C280,296 302,258 330,232 Z" fill="url(#hatch)" opacity="0.3"/>
+  <ellipse cx="291" cy="552" rx="17" ry="23" fill="#c9925f" transform="rotate(-8 291 552)"/>
+  <path d="M282,548 C286,558 296,560 300,550" stroke="#5a3c22" stroke-width="2" fill="none"/>
+  <g stroke="#4a2f1c" stroke-width="5" opacity="0.75">
+    <path d="M278,330 C290,336 300,336 310,330"/>
+    <path d="M272,400 C286,406 298,406 308,398"/>
+    <path d="M275,470 C288,476 298,476 306,468"/>
+  </g>
+
+  <!-- ===== PROSTHETIC ARM (viewer-right = character's left) ===== -->
+  <path d="M562,232 C596,250 618,286 626,326 C633,362 630,398 616,428 C624,458 628,488 622,516 C618,532 610,546 600,556 C608,540 610,522 606,504 C614,476 612,444 600,414 C610,384 610,350 598,318 C589,292 574,268 552,250 Z" fill="#b98a5e"/>
+  <path d="M562,232 C596,250 618,286 626,326 C633,362 630,398 616,428 C624,458 628,488 622,516 C618,532 610,546 600,556 C608,540 610,522 606,504 C614,476 612,444 600,414 C610,384 610,350 598,318 C589,292 574,268 552,250 Z" fill="url(#crossHatch)" opacity="0.4"/>
+  <!-- wrap bindings at joints -->
+  <g fill="#4a2f1c">
+    <rect x="588" y="316" width="42" height="12" rx="5" transform="rotate(8 609 322)"/>
+    <rect x="592" y="414" width="40" height="12" rx="5" transform="rotate(6 612 420)"/>
+    <rect x="588" y="500" width="36" height="11" rx="5" transform="rotate(4 606 505)"/>
+  </g>
+  <!-- tenue tech glow at joints -->
+  <circle cx="609" cy="322" r="5" fill="#cdeaf5" opacity="0.75" filter="url(#glow)"/>
+  <circle cx="612" cy="420" r="4.5" fill="#cdeaf5" opacity="0.7" filter="url(#glow)"/>
+  <circle cx="606" cy="505" r="4" fill="#cdeaf5" opacity="0.65" filter="url(#glow)"/>
+  <!-- prosthetic hand: wrapped mitt, no claw -->
+  <path d="M596,552 C610,548 622,556 622,570 C622,584 610,592 596,590 C586,588 580,578 582,568 C584,558 588,554 596,552 Z" fill="#6b4327"/>
+  <path d="M596,552 C610,548 622,556 622,570 C622,584 610,592 596,590 C586,588 580,578 582,568 C584,558 588,554 596,552 Z" fill="url(#hatch)" opacity="0.3"/>
+
+  <!-- ===== ATLATL HARNESS + VISIBLE ROD (diagonal ~45°, over prosthetic-side shoulder) ===== -->
+  <path d="M360,540 L580,246" stroke="#4a2f1c" stroke-width="14" stroke-linecap="round" opacity="0.9"/>
+  <path d="M360,540 L580,246" stroke="#2e1e10" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <g transform="translate(560,222) rotate(-42)">
+    <rect x="-6" y="-70" width="12" height="150" rx="5" fill="#5c3c22"/>
+    <rect x="-6" y="-70" width="12" height="150" rx="5" fill="url(#hatch)" opacity="0.3"/>
+    <rect x="-9" y="-80" width="18" height="16" rx="4" fill="#17171a"/>
+    <circle cx="0" cy="-72" r="4" fill="#cdeaf5" opacity="0.6" filter="url(#glow)"/>
+  </g>
+
+  <!-- chest wrap / bone ornaments -->
+  <path d="M400,258 C420,268 480,268 500,258 L494,290 C468,298 432,298 406,290 Z" fill="#4a2f1c" opacity="0.9"/>
+  <g fill="#e7dcc0">
+    <circle cx="432" cy="292" r="6"/>
+    <circle cx="450" cy="298" r="7"/>
+    <circle cx="468" cy="292" r="6"/>
+  </g>
+  <path d="M436,232 L450,254 L464,232" fill="none" stroke="#e7dcc0" stroke-width="3"/>
+  <circle cx="450" cy="256" r="7" fill="#e7dcc0"/>
+
+  <!-- ===== NECK + HEAD ===== -->
+  <path d="M430,196 C427,210 427,222 432,232 L468,232 C473,222 473,210 470,196 Z" fill="#c08152"/>
+  <path d="M450,108 C478,108 496,131 495,159 C494,182 484,198 466,206 C458,210 442,210 434,206 C416,198 406,182 405,159 C404,131 422,108 450,108 Z" fill="#c9925f"/>
+  <path d="M450,108 C478,108 496,131 495,159 C494,182 484,198 466,206 C458,210 442,210 434,206 C416,198 406,182 405,159 C404,131 422,108 450,108 Z" fill="url(#hatch)" opacity="0.18"/>
+
+  <!-- organic eye (character's right, viewer-left) -->
+  <path d="M418,158 C424,153 434,153 440,158 C434,163 424,163 418,158 Z" fill="#241a10"/>
+  <path d="M414,157 C422,150 436,150 444,157" stroke="#5a3c22" stroke-width="1.5" fill="none"/>
+
+  <!-- implant eye (character's left, viewer-right) -->
+  <circle cx="470" cy="158" r="11" fill="#e7dcc0" stroke="#4a2f1c" stroke-width="2"/>
+  <circle cx="470" cy="158" r="5.5" fill="#cdeaf5" opacity="0.85" filter="url(#glow)"/>
+  <g stroke="#4a2f1c" stroke-width="1" opacity="0.7">
+    <line x1="470" y1="144" x2="470" y2="149"/>
+    <line x1="470" y1="167" x2="470" y2="172"/>
+    <line x1="456" y1="158" x2="461" y2="158"/>
+    <line x1="479" y1="158" x2="484" y2="158"/>
+  </g>
+
+  <path d="M442,182 C448,186 452,186 458,182" stroke="#5a3c22" stroke-width="1.6" fill="none"/>
+  <path d="M446,170 L442,178 L448,180" stroke="#a8744c" stroke-width="1.4" fill="none"/>
+
+  <!-- ===== HAIR FRONT LAYER ===== -->
+  <path d="M450,104 C424,102 402,116 392,138 C400,128 414,120 428,118 C420,126 414,138 412,150 C420,138 432,130 444,128 C438,140 436,152 438,164 C446,148 452,132 452,118 Z" fill="#2e2115"/>
+  <path d="M450,104 C476,102 498,116 508,138 C500,128 486,120 472,118 C480,126 486,138 488,150 C480,138 468,130 456,128 C462,140 464,152 462,164 C454,148 448,132 448,118 Z" fill="#2e2115"/>
+  <path d="M450,104 C446,98 454,98 450,104 C462,96 480,98 492,110 C482,106 468,106 458,112 C468,110 480,114 488,122" fill="#2e2115"/>
+  <path d="M420,122 C400,140 388,166 388,192 C378,180 374,158 380,138 C386,120 400,108 420,110 Z" fill="#241a10"/>
+  <path d="M480,122 C500,140 512,166 512,192 C522,180 526,158 520,138 C514,120 500,108 480,110 Z" fill="#241a10"/>
+  <!-- topknot tie -->
+  <ellipse cx="450" cy="112" rx="14" ry="8" fill="#4a2f1c"/>
+  <path d="M440,106 C444,120 450,132 442,146" stroke="#2e2115" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M460,106 C458,122 452,134 462,148" stroke="#2e2115" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <!-- legend -->
+  <g font-size="13" fill="#3a2f20">
+    <text x="60" y="1080">Orientación: ojo/brazo implantados = IZQUIERDO del personaje → DERECHA de la imagen.</text>
+    <text x="60" y="1100">Materiales: cuero (dominante), hueso (secundario), obsidiana/sílex y ocre (acentos), tecnología oculta.</text>
+    <text x="60" y="1120">Proporción de referencia: ≈8.3 cabezas · postura estrecha/ágil · hombro protésico más alto y pesado.</text>
+  </g>
+</svg>
