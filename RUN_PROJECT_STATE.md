@@ -121,10 +121,15 @@ No evaluar todavía:
 - detalles de armas;
 - símbolos finos del implante.
 
+### Artefacto de Stage 2
+- Archivo en repo: `assets/STAGE2_FRONT_VIEW.jpg`
+- URL raw: `https://raw.githubusercontent.com/GonzaDSGH/VIDEOJUEGO/main/assets/STAGE2_FRONT_VIEW.jpg`
+- Este es el artefacto que Claude debe abrir y evaluar visualmente.
+
 ## Flujo de trabajo compartido
-- Claude: evalúa cada etapa, marca correcciones y define el siguiente blueprint.
-- ChatGPT: produce los bocetos/láminas/artefactos solicitados y actualiza este estado.
+- Claude: lee `RUN_PROJECT_STATE.md`, abre los artefactos raw indicados y evalúa cada etapa.
+- ChatGPT: produce los bocetos/láminas/artefactos solicitados, los sube al repo y actualiza este estado.
 - Usuario: no dibuja ni produce manualmente; usa ambos asistentes para desarrollar el proceso.
 
 ## Próxima acción
-Claude debe evaluar el Stage 2 — Front View block-in. Si la estructura es correcta, debe cerrar Stage 2 y pasar al blueprint de SIDE VIEW.
+Claude debe abrir el artefacto `assets/STAGE2_FRONT_VIEW.jpg`, evaluar Stage 2 — Front View block-in y, si la estructura es correcta, cerrar Stage 2 y pasar al blueprint de SIDE VIEW.
