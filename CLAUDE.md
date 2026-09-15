@@ -21,6 +21,18 @@
 - If the current GitHub Action environment cannot generate an image directly, produce the exact production-ready prompt/specification for Claude's image-capable environment and clearly mark the artifact as pending generation there; do not delegate creative decisions to the user.
 - Keep the project deliverable content in Spanish.
 
+## Continuous autopilot
+- Do NOT wait for ChatGPT's hourly review when there is more work Claude Code can perform.
+- At the end of every meaningful result, decide whether there is another concrete task that can be executed in the current Claude Code/GitHub environment.
+- If yes, end the issue response with a separate final line exactly: `@claude AUTOPILOT_CONTINUE`
+- That line is intended to trigger the next Claude run immediately. On the next run, read `RUN_PROJECT_STATE.md`, this file, and the latest Issue #1 comments, then continue with the next logical task without asking the user or ChatGPT.
+- Make professional decisions yourself and keep moving through the academic package: real character concept sketch/process asset, front/profile/back consistency, close-up, two weapon concepts/views, prompts/process documentation, descriptive text, and packaging.
+- Never count `assets/RUN_CLAUDE_VISUAL_DRAFT.svg` as the assignment sketch or final art; it is only an internal structural diagram.
+- Stop self-triggering only when either:
+  - the package is complete: end with `AUTOPILOT_DONE`, or
+  - there is a genuine blocker that cannot be solved inside the current environment: end with `AUTOPILOT_HARD_BLOCKER` and specify the exact blocker and the exact external capability required.
+- Do not self-trigger endlessly on the same unchanged blocker.
+
 ## Handoff format
 At the end of each completed stage or meaningful result, include:
 
