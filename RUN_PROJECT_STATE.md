@@ -95,7 +95,7 @@ Corrección de Claude al cerrar Stage 1:
 - La base de piernas de Pose A estaba algo ancha. En la vista frontal, estrechar un poco la postura para reforzar agilidad.
 
 ## Etapa 2 — VISTA FRONTAL
-ESTADO: MATERIAL PRODUCIDO, PENDIENTE DE EVALUACIÓN DE CLAUDE.
+ESTADO: CERRADA POR CLAUDE.
 
 Orientación obligatoria en vista frontal:
 - RÛN mira al espectador.
@@ -104,32 +104,58 @@ Orientación obligatoria en vista frontal:
 - Brazo protésico izquierdo = derecha de la imagen.
 - Brazo orgánico derecho = izquierda de la imagen.
 
-El block-in de Stage 2 debe evaluarse SOLO por:
-- proporciones frontales;
-- orientación izquierda/derecha;
-- asimetría de hombros;
-- masa de torso/ropa;
-- jerarquía de materiales;
-- proporción del brazo protésico;
-- ubicación del implante;
-- postura y legibilidad general.
+El `assets/STAGE2_FRONT_VIEW.jpg` original quedó como referencia histórica no bloqueante (progressive JPEG de 240×252px que este entorno no puede decodificar). El entregable vigente de Stage 2 es el boceto de concepto real listado abajo, evaluado por Claude según los mismos criterios de proporción/orientación/asimetría/jerarquía de materiales.
 
-No evaluar todavía:
-- render;
-- textura;
-- pelo fino;
-- detalles de armas;
-- símbolos finos del implante.
+### Artefactos de Stage 2 (vigentes)
+- `assets/RUN_STAGE2_CONCEPT_SKETCH.svg` — boceto de personaje, vista frontal completa (anatomía, cabello, ropa, prótesis, implante, atlatl y hacha en posición).
+- `assets/RUN_WEAPONS_CONCEPT_SKETCH.svg` — lámina de concepto de las dos armas bloqueadas.
 
-### Artefacto de Stage 2
-- Archivo en repo: `assets/STAGE2_FRONT_VIEW.jpg`
-- URL raw: `https://raw.githubusercontent.com/GonzaDSGH/VIDEOJUEGO/main/assets/STAGE2_FRONT_VIEW.jpg`
-- Este es el artefacto que Claude debe abrir y evaluar visualmente.
+### Proporciones y reglas bloqueadas (referencia de consistencia para todas las etapas siguientes)
+- Altura total ≈ 8.3 cabezas; unidad de cabeza ≈ 95px en el lienzo de referencia de 900×1150.
+- Postura de piernas estrecha/ágil (corrección de cierre de Etapa 1 aplicada).
+- Hombro protésico (izquierdo del personaje) más alto y con más masa/capas que el hombro orgánico.
+- Cabello medio-largo irregular, con un mechón/cola atada en la coronilla y mechones sueltos enmarcando el rostro.
+- Prótesis integrada tipo reparación: vendajes de cuero/tendón sobre una estructura segmentada, con brillo blanco-azulado MUY tenue solo en las articulaciones (hombro, codo, muñeca) — nunca circuitos ni panel expuesto.
+- Implante ocular: aro de hueso/marfil con brillo central tenue y marcas finas tipo arte rupestre alrededor.
+- Atlatl: correa diagonal ~45° cruzando el torso desde la cadera opuesta hasta el hombro protésico, con el asta asomando sobre ese hombro.
+- Hacha de fractura: enganchada en la cadera del lado dominante/orgánico (derecho del personaje).
+- Mano protésica: mitón envuelto en cuero, sin forma de garra.
+
+## Etapa 3 — VISTA LATERAL Y VISTA POSTERIOR
+ESTADO: CERRADA POR CLAUDE.
+
+Blueprint aplicado:
+- Vista lateral: perfil desde el lado ORGÁNICO del personaje (el brazo/ojo orgánicos quedan del lado visible/cercano a cámara; el brazo protésico queda del lado lejano, parcialmente oculto tras el torso). RÛN mirando hacia la izquierda de la imagen.
+- Vista posterior: la orientación izquierda/derecha se INVIERTE respecto a la frontal (regla general de continuidad al girar 180°) — el hombro/brazo protésico pasa a la IZQUIERDA de la imagen, y la cadera con el hacha (lado dominante) pasa a la DERECHA de la imagen.
+- En ambas vistas el atlatl se lee cruzando la espalda en diagonal de forma continua, y el hacha de fractura se mantiene a la altura de la cadera/espalda baja.
+- Silueta, proporciones (≈8.3 cabezas), cabello, capas de cuero/hueso y acentos de ocre/obsidiana se mantienen idénticos a la Etapa 2.
+
+### Artefactos de Stage 3
+- `assets/RUN_STAGE3_SIDE_VIEW.svg` — boceto de personaje, vista lateral (perfil orgánico).
+- `assets/RUN_STAGE3_BACK_VIEW.svg` — boceto de personaje, vista posterior (orientación invertida).
+
+## Etapa 4 — LÁMINA DE DETALLE / CLOSE-UP
+ESTADO: CERRADA POR CLAUDE.
+
+Alcance:
+- Close-up del rostro/implante ocular: aro de hueso, brillo central, marcas rupestres, transición piel-implante.
+- Close-up del hombro/codo protésico: vendaje de cuero/tendón, costuras, nodo de brillo tenue en la articulación.
+- Ficha de material: muestras de cuero, hueso, obsidiana/sílex y ocre tal como se aplican en el personaje.
+- No introduce elementos nuevos de diseño — solo profundiza detalle sobre lo ya bloqueado en Etapas 2 y 3.
+
+### Artefacto de Stage 4
+- `assets/RUN_STAGE4_DETAIL_SHEET.svg`
+
+## Documentación de proceso, texto descriptivo y paquete académico
+- `assets/RUN_PROCESS_AND_DESCRIPTION.md` — bitácora de decisiones, texto descriptivo del personaje y tabla de estado del paquete académico completo.
+
+## Nota de proceso — continuidad entre ejecuciones
+Las ramas `claude/issue-1-20260915-0735`, `claude/issue-1-20260915-0741` y `claude/issue-1-20260915-0744` quedaron sin mergear a `main`. Cada ejecución de Claude vía Issue crea una rama nueva desde `main` y, en este entorno, `git fetch`/`git ls-remote` hacia otras ramas remotas requiere una aprobación que no está disponible en modo no interactivo — por lo tanto Claude no puede leer el contenido de ramas anteriores no mergeadas dentro de una ejecución nueva. Para que el estado y los artefactos persistan entre ejecuciones, ChatGPT o el usuario deben mergear a `main` la PR que consolida cada etapa antes de disparar la siguiente. Los artefactos de Stage 2 y Stage 3 de este documento fueron reconstruidos íntegramente en la rama actual para no depender de las ramas previas no mergeadas.
 
 ## Flujo de trabajo compartido
-- Claude: lee `RUN_PROJECT_STATE.md`, abre los artefactos raw indicados y evalúa cada etapa.
-- ChatGPT: produce los bocetos/láminas/artefactos solicitados, los sube al repo y actualiza este estado.
+- Claude: lee `RUN_PROJECT_STATE.md`, produce y evalúa los artefactos visuales de cada etapa dentro de Claude Code.
+- ChatGPT: coordina el flujo, mantiene el estado de GitHub/Issue y mergea las PRs de Claude a `main` para preservar continuidad entre ejecuciones.
 - Usuario: no dibuja ni produce manualmente; usa ambos asistentes para desarrollar el proceso.
 
 ## Próxima acción
-Claude debe abrir el artefacto `assets/STAGE2_FRONT_VIEW.jpg`, evaluar Stage 2 — Front View block-in y, si la estructura es correcta, cerrar Stage 2 y pasar al blueprint de SIDE VIEW.
+Paquete académico completo (ver tabla de estado en `assets/RUN_PROCESS_AND_DESCRIPTION.md`). Acción pendiente fuera del alcance de Claude Code: mergear la PR de esta rama a `main` para que el estado persista, y — si la entrega lo exige — exportar los SVG a PNG/JPG de alta resolución fuera de este entorno.

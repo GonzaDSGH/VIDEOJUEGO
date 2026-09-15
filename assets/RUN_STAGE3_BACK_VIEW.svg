@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1150" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <radialGradient id="paperB" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#f3ead4"/>
+      <stop offset="100%" stop-color="#e3d5b3"/>
+    </radialGradient>
+    <pattern id="hatchB" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(52)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#241b12" stroke-width="0.9" opacity="0.55"/>
+    </pattern>
+    <pattern id="hatchDeepB" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(52)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#241b12" stroke-width="1.1" opacity="0.7"/>
+    </pattern>
+    <pattern id="crossHatchB" width="7" height="7" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#241b12" stroke-width="0.8" opacity="0.5" transform="rotate(45 3.5 3.5)"/>
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#241b12" stroke-width="0.8" opacity="0.5" transform="rotate(-45 3.5 3.5)"/>
+    </pattern>
+    <filter id="glowB" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="1150" fill="url(#paperB)"/>
+  <text x="450" y="52" text-anchor="middle" font-size="26" fill="#2a2015" letter-spacing="2">RÛN — ETAPA 3: VISTA POSTERIOR</text>
+  <text x="450" y="78" text-anchor="middle" font-size="14" fill="#5a4a34">De espaldas — la orientación se invierte respecto a la vista frontal</text>
+
+  <ellipse cx="450" cy="918" rx="230" ry="18" fill="#00000012"/>
+
+  <!-- ===== LEGS (reused, roughly symmetric) ===== -->
+  <path d="M412,540 C402,592 394,650 389,696 C385,728 383,742 381,764 C377,804 375,842 375,868 C375,880 377,890 381,898 L402,898 C406,888 407,878 406,866 C405,828 406,790 410,752 C413,718 417,680 422,640 C426,604 428,574 426,546 Z" fill="#c9925f"/>
+  <path d="M412,540 C402,592 394,650 389,696 C385,728 383,742 381,764 C377,804 375,842 375,868 C375,880 377,890 381,898 L402,898 C406,888 407,878 406,866 C405,828 406,790 410,752 C413,718 417,680 422,640 C426,604 428,574 426,546 Z" fill="url(#hatchB)" opacity="0.35"/>
+  <path d="M488,540 C498,592 506,650 511,696 C515,728 517,742 519,764 C523,804 525,842 525,868 C525,880 523,890 519,898 L498,898 C494,888 493,878 494,866 C495,828 494,790 490,752 C487,718 483,680 478,640 C474,604 472,574 474,546 Z" fill="#c9925f"/>
+  <path d="M488,540 C498,592 506,650 511,696 C515,728 517,742 519,764 C523,804 525,842 525,868 C525,880 523,890 519,898 L498,898 C494,888 493,878 494,866 C495,828 494,790 490,752 C487,718 483,680 478,640 C474,604 472,574 474,546 Z" fill="url(#hatchB)" opacity="0.35"/>
+  <g stroke="#4a2f1c" stroke-width="6" fill="none" opacity="0.85">
+    <path d="M382,600 C398,606 412,606 424,600"/>
+    <path d="M379,660 C398,668 414,668 428,658"/>
+    <path d="M376,730 C396,738 412,738 426,728"/>
+    <path d="M375,800 C394,806 408,806 420,798"/>
+    <path d="M518,600 C502,606 488,606 476,600"/>
+    <path d="M521,660 C502,668 486,668 472,658"/>
+    <path d="M524,730 C504,738 488,738 474,728"/>
+    <path d="M525,800 C506,806 492,806 480,798"/>
+  </g>
+  <path d="M375,898 C370,908 368,916 371,924 C376,931 398,933 410,928 C417,924 415,912 408,904 L402,898 Z" fill="#5c3c22"/>
+  <path d="M525,898 C530,908 532,916 529,924 C524,931 502,933 490,928 C483,924 485,912 492,904 L498,898 Z" fill="#5c3c22"/>
+
+  <!-- ===== HIP WRAP (from behind, buttock seam) ===== -->
+  <path d="M348,516 C380,536 420,546 450,546 C480,546 520,536 552,516 C556,540 552,560 540,576 L360,576 C348,560 344,540 348,516 Z" fill="#6b4327"/>
+  <path d="M348,516 C380,536 420,546 450,546 C480,546 520,536 552,516 C556,540 552,560 540,576 L360,576 C348,560 344,540 348,516 Z" fill="url(#hatchB)" opacity="0.25"/>
+  <path d="M450,516 C450,540 450,560 450,576" stroke="#4a2f1c" stroke-width="3" opacity="0.6"/>
+
+  <!-- fracture axe now at DOMINANT/right hip = viewer-RIGHT in back view -->
+  <g transform="translate(555,470) rotate(-18)">
+    <rect x="-4" y="0" width="8" height="92" rx="3" fill="#5c3c22"/>
+    <path d="M6,4 C30,-6 44,-24 40,-42 C24,-34 8,-20 -4,-6 Z" fill="#17171a"/>
+    <path d="M6,4 C30,-6 44,-24 40,-42 C24,-34 8,-20 -4,-6 Z" fill="url(#crossHatchB)" opacity="0.5"/>
+    <line x1="6" y1="2" x2="-6" y2="10" stroke="#b5651d" stroke-width="4"/>
+  </g>
+
+  <!-- ===== TORSO (mirrored from front-view silhouette) ===== -->
+  <path d="M555,242 C502,224 398,224 338,232 C310,268 306,318 320,358 C326,398 332,428 342,458 C332,478 320,498 324,520 C338,534 378,544 408,546 L492,546 C522,544 562,534 576,520 C580,498 568,478 558,458 C568,428 574,398 580,358 C594,318 590,268 555,242 Z" fill="#c9925f"/>
+  <path d="M555,242 C502,224 398,224 338,232 C310,268 306,318 320,358 C326,398 332,428 342,458 C332,478 320,498 324,520 C338,534 378,544 408,546 L492,546 C522,544 562,534 576,520 C580,498 568,478 558,458 C568,428 574,398 580,358 C594,318 590,268 555,242 Z" fill="url(#hatchB)" opacity="0.22"/>
+  <path d="M322,360 C318,392 320,420 330,448 L348,448 C338,418 336,388 340,362 Z" fill="url(#hatchDeepB)" opacity="0.6"/>
+  <path d="M578,360 C582,392 580,420 570,448 L552,448 C562,418 564,388 560,362 Z" fill="url(#hatchDeepB)" opacity="0.6"/>
+
+  <!-- spine groove + shoulder blades -->
+  <path d="M450,262 L450,516" stroke="#9c6a3e" stroke-width="1.6" opacity="0.4" stroke-dasharray="2,7"/>
+  <g stroke="#9c6a3e" stroke-width="1.4" opacity="0.35" fill="none">
+    <path d="M410,300 C420,320 426,344 424,368"/>
+    <path d="M490,300 C480,320 474,344 476,368"/>
+  </g>
+
+  <!-- ===== ORGANIC ARM — now viewer-RIGHT (dominant) ===== -->
+  <path d="M555,242 C584,264 606,300 616,340 C625,382 626,426 618,466 C613,492 606,514 600,534 C596,544 604,552 612,548 C620,528 628,504 633,478 C642,432 642,382 630,336 C620,296 598,258 570,232 Z" fill="#c9925f"/>
+  <path d="M555,242 C584,264 606,300 616,340 C625,382 626,426 618,466 C613,492 606,514 600,534 C596,544 604,552 612,548 C620,528 628,504 633,478 C642,432 642,382 630,336 C620,296 598,258 570,232 Z" fill="url(#hatchB)" opacity="0.3"/>
+  <ellipse cx="609" cy="552" rx="17" ry="23" fill="#c9925f" transform="rotate(8 609 552)"/>
+  <path d="M618,548 C614,558 604,560 600,550" stroke="#5a3c22" stroke-width="2" fill="none"/>
+  <g stroke="#4a2f1c" stroke-width="5" opacity="0.75">
+    <path d="M622,330 C610,336 600,336 590,330"/>
+    <path d="M628,400 C614,406 602,406 592,398"/>
+    <path d="M625,470 C612,476 602,476 594,468"/>
+  </g>
+
+  <!-- ===== PROSTHETIC ARM — now viewer-LEFT ===== -->
+  <path d="M338,232 C304,250 282,286 274,326 C267,362 270,398 284,428 C276,458 272,488 278,516 C282,532 290,546 300,556 C292,540 290,522 294,504 C286,476 288,444 300,414 C290,384 290,350 302,318 C311,292 326,268 348,250 Z" fill="#b98a5e"/>
+  <path d="M338,232 C304,250 282,286 274,326 C267,362 270,398 284,428 C276,458 272,488 278,516 C282,532 290,546 300,556 C292,540 290,522 294,504 C286,476 288,444 300,414 C290,384 290,350 302,318 C311,292 326,268 348,250 Z" fill="url(#crossHatchB)" opacity="0.4"/>
+  <g fill="#4a2f1c">
+    <rect x="270" y="316" width="42" height="12" rx="5" transform="rotate(-8 291 322)"/>
+    <rect x="268" y="414" width="40" height="12" rx="5" transform="rotate(-6 288 420)"/>
+    <rect x="276" y="500" width="36" height="11" rx="5" transform="rotate(-4 294 505)"/>
+  </g>
+  <circle cx="291" cy="322" r="5" fill="#cdeaf5" opacity="0.75" filter="url(#glowB)"/>
+  <circle cx="288" cy="420" r="4.5" fill="#cdeaf5" opacity="0.7" filter="url(#glowB)"/>
+  <circle cx="294" cy="505" r="4" fill="#cdeaf5" opacity="0.65" filter="url(#glowB)"/>
+  <path d="M304,552 C290,548 278,556 278,570 C278,584 290,592 304,590 C314,588 320,578 318,568 C316,558 312,554 304,552 Z" fill="#6b4327"/>
+  <path d="M304,552 C290,548 278,556 278,570 C278,584 290,592 304,590 C314,588 320,578 318,568 C316,558 312,554 304,552 Z" fill="url(#hatchB)" opacity="0.3"/>
+
+  <!-- ===== ATLATL HARNESS — mirrored diagonal, viewer-right hip to viewer-left shoulder ===== -->
+  <path d="M540,540 L320,246" stroke="#4a2f1c" stroke-width="14" stroke-linecap="round" opacity="0.9"/>
+  <path d="M540,540 L320,246" stroke="#2e1e10" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <g transform="translate(340,222) rotate(42)">
+    <rect x="-6" y="-70" width="12" height="150" rx="5" fill="#5c3c22"/>
+    <rect x="-6" y="-70" width="12" height="150" rx="5" fill="url(#hatchB)" opacity="0.3"/>
+    <rect x="-9" y="-80" width="18" height="16" rx="4" fill="#17171a"/>
+    <circle cx="0" cy="-72" r="4" fill="#cdeaf5" opacity="0.6" filter="url(#glowB)"/>
+  </g>
+
+  <!-- ===== NECK ===== -->
+  <path d="M430,196 C427,210 427,222 432,232 L468,232 C473,222 473,210 470,196 Z" fill="#c08152"/>
+
+  <!-- ===== HEAD (back of skull, fully covered by hair) ===== -->
+  <path d="M450,108 C478,108 496,131 495,159 C494,182 484,198 466,206 C458,210 442,210 434,206 C416,198 406,182 405,159 C404,131 422,108 450,108 Z" fill="#c9925f"/>
+
+  <!-- ear hint (dominant/organic side, viewer-right) -->
+  <ellipse cx="489" cy="168" rx="7" ry="11" fill="#c08152" stroke="#9c6a3e" stroke-width="1"/>
+
+  <!-- ===== HAIR — full back coverage + tied tail down the spine ===== -->
+  <path d="M405,148 C399,176 403,204 416,226 C423,238 431,246 440,250 L460,250 C469,246 477,238 484,226 C497,204 501,176 495,148 C491,124 477,107 450,105 C423,107 409,124 405,148 Z" fill="#241a10"/>
+  <path d="M405,148 C399,176 403,204 416,226 C423,238 431,246 440,250 L460,250 C469,246 477,238 484,226 C497,204 501,176 495,148 C491,124 477,107 450,105 C423,107 409,124 405,148 Z" fill="url(#hatchB)" opacity="0.25"/>
+  <ellipse cx="450" cy="254" rx="15" ry="9" fill="#4a2f1c"/>
+  <path d="M436,250 C426,280 420,320 424,362 C426,392 434,420 446,444 C452,420 452,392 448,362 C444,326 438,286 434,252 Z" fill="#2e2115"/>
+  <path d="M436,250 C426,280 420,320 424,362 C426,392 434,420 446,444 C452,420 452,392 448,362 C444,326 438,286 434,252 Z" fill="url(#hatchB)" opacity="0.3"/>
+  <path d="M464,250 C474,280 480,320 476,362 C474,392 466,420 454,444" fill="none" stroke="#241a10" stroke-width="3" opacity="0.6"/>
+  <g stroke="#4a2f1c" stroke-width="2.5" opacity="0.7">
+    <line x1="430" y1="300" x2="422" y2="330"/>
+    <line x1="470" y1="300" x2="478" y2="330"/>
+  </g>
+
+  <g font-size="13" fill="#3a2f20">
+    <text x="60" y="1080">Orientación invertida: brazo/hombro protésico ahora a la IZQUIERDA de la imagen (mismo lado del</text>
+    <text x="60" y="1098">personaje que en la vista frontal). Hacha en la cadera dominante, ahora a la derecha de la imagen.</text>
+    <text x="60" y="1120">Atlatl visible en toda su diagonal sobre la espalda; cabello atado con cola suelta sobre la columna.</text>
+  </g>
+</svg>
